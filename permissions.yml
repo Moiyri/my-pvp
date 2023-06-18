@@ -1,0 +1,8 @@
+permissions:
+  gardenwar.*:
+    description: all the permissions
+    children:
+      gardenwar.setup: true
+  gardenwar.setup:
+    description: setup a game
+    default: op
