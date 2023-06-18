@@ -1,11 +1,20 @@
-main: com.moiyri.gardenwar.GardenWar
-name: GardenWar
+main: com.moiyri.gardenwarfare.GardenWarfare
+name: GardenWarfare
 version: 0.0.1
 
 commands:
-  gardenwar:
+  gardenwarfare:
     aliases: gw
     description: This is a basic command.
-    usage: Welcome to <name>! version <version>.
-    permission: gardenwar.setup
+    usage: Welcome to Garden Warfare! version <version>.
+    permission: gardenwarfare.setup
     permission-message: You don't have <permission>
+
+permissions:
+  gardenwarfare.*:
+    description: all the permissions
+    children:
+      gardenwarfare.setup: true
+  gardenwarfare.setup:
+    description: setup a game
+    default: op

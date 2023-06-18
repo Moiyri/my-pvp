@@ -1,6 +1,6 @@
-package com.moiyri.gardenwar.gui;
+package com.moiyri.gardenwarfare.gui;
 
-import com.moiyri.gardenwar.GardenWar;
+import com.moiyri.gardenwarfare.GardenWarfare;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.event.EventHandler;
@@ -11,13 +11,13 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
 public class SetupGUI implements GameGUI, Listener {
-    GardenWar plugin;
+    GardenWarfare plugin;
 
     private ItemStack lobby;
     private ItemStack map;
     private Inventory gui;
 
-    public SetupGUI(GardenWar plugin) {
+    public SetupGUI(GardenWarfare plugin) {
         this.plugin = plugin;
         this.gui = Bukkit.createInventory(null, 9, "设置游戏");
 

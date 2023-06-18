@@ -1,4 +1,4 @@
-package com.moiyri.gardenwar.game;
+package com.moiyri.gardenwarfare.game;
 
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
@@ -13,7 +13,7 @@ public class OperatorItem {
         ItemMeta indicatorItemMeta = indicator.getItemMeta();
         indicatorItemMeta.setDisplayName("Indicator");
         List<String> indicatorLore = new ArrayList<>();
-        indicatorLore.add("Indicator for GardenWar");
+        indicatorLore.add("Indicator for GardenWarfare");
         indicatorItemMeta.setLore(indicatorLore);
         indicator.setItemMeta(indicatorItemMeta);
         return indicator;

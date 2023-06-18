@@ -1,11 +1,11 @@
-package com.moiyri.gardenwar;
+package com.moiyri.gardenwarfare;
 
-import com.moiyri.gardenwar.gui.SetupGUI;
-import com.moiyri.gardenwar.listener.IndicatorListener;
-import com.moiyri.gardenwar.manager.CommandManager;
+import com.moiyri.gardenwarfare.gui.SetupGUI;
+import com.moiyri.gardenwarfare.listener.IndicatorListener;
+import com.moiyri.gardenwarfare.manager.CommandManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public class GardenWar extends JavaPlugin {
+public class GardenWarfare extends JavaPlugin {
     @Override
     public void onEnable() {
         this.setupCommandManager();
@@ -25,6 +25,6 @@ public class GardenWar extends JavaPlugin {
 
     public void setupCommandManager() {
         CommandManager manager = new CommandManager(this);
-        this.getCommand("gardenwar").setExecutor(manager);
+        this.getCommand("gardenwarfare").setExecutor(manager);
     }
 }
